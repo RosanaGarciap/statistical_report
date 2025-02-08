@@ -9,13 +9,15 @@ The purpose of this little project is to explain how Python libraries for Statis
 
 # Data Analysis Results
 
-Question 1:
+**Question 1:** *What was the medical condition(disease) ?* 
+
+**Question 2:** *How many cases of Female and male patients with Diabetes between 2023 and 2024?* 
 
 
 # Development Environment
 
-Programming Language: Python
-Version: 
+Programming Language: Python 3.13.0
+Editor: Visual Studio Code 1.97.0
 ## Libreries
 
 - pypdf2 24.2
