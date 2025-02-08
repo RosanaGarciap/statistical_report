@@ -1,7 +1,7 @@
 #######################################################################
-# Filtering functions 
-#
-#
+# AUTHOR: ROSANA GARCIA
+# CSE 230
+# Filtering, plotting and file writing functions.
 #######################################################################
 
 # Importing libraries
@@ -75,8 +75,17 @@ def medical_center_assistence(df, diseases, from_date):
                 plottings[disease] = row_number
     return plottings
 
+# Function Name: show_plot
+# INPUT: 
+#   plot: array of dataset
+#   title: string containing the title of the image
+# OUTPUT:
+#   None
+# DESCRIPTION: if not exist, this programe creates a 
+# pdf file that contains all the ploting made
 
 def show_plot(plots, title):
+
     with PdfPages('barplot_.pdf') as pdf:
         header_values = list(plots.keys())
         #print(header_values)
@@ -96,17 +105,23 @@ def show_plot(plots, title):
 
         for i in range(0, len(header_values)):
             plt.text(header_values[i], height_values[i], str(height_values[i]), ha="center" )
+
         # visualizing the plot
         #plt.show()
+
         #Saving plot unto pdf file
         pdf.savefig()
+
         #close object
         plt.close()
 
-#
-# INPUT: Dataframe of 2 columns
-#
-#
+# Function Name: show_spectrocopy
+# INPUT: 
+#   plot: array of dataset
+# OUTPUT:
+#   None
+# DESCRIPTION: if not exist, this programe creates a 
+# pdf file that contains all the ploting made
 def show_spectroscopy(scattered_plots):
     with PdfPages('timespan_analysis_plot.pdf') as pdf:
         y_values = list( scattered_plots[0]["Gender"])
@@ -124,5 +139,5 @@ def show_spectroscopy(scattered_plots):
         ax.legend()        
         ax.grid(True)
         pdf.savefig()
-        plt.show()
+        
     plt.close()
