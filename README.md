@@ -9,10 +9,14 @@ The purpose of this little project is to explain how Python libraries for Statis
 
 # Data Analysis Results
 
-**Question 1:** *What was the medical condition(disease) ?* 
+**Question 1:** *What Medical Condition (disease) had more cases since 2023 ?* 
+This process requires the sum of all cases registered for each medical condition on the list. to ensure the date span filters and data manipulation are required. The answer to this question can be applied to hospital pharmacies to understand how much medicine for the different treatments is required to have in store to ensure the treatment of the patients.
 
-**Question 2:** *How many cases of Female and male patients with Diabetes between 2023 and 2024?* 
+![Barplot of number of medical diseases from 2023 to 2025](/image/Plot_Image.png)
 
+**Question 2:** *How many Female and male patients with Diabetes required medical treatment between 2023 and 2024?* 
+The information gained from processing the dataset provided knowledge regarding whether the cases of one gender have been increasing respect for the other. In this particular case, male and female cases have had consistent distribution, which implicated there was not a tendency to receive more cases of women or men during 2023. To gain more information we could also study the number of cases by year and determine if there has been an increasing number of cases from las decade.
+![Plot of Diabetes cases from 2023 to 2025](/image/Spectral_Plot_Image.png)
 
 # Development Environment
 
@@ -26,7 +30,7 @@ Editor: Visual Studio Code 1.97.0
 - os
 - DateTime
 
-## Resources:
+## Websites Resources:
 * [Real Python](https://realpython.com/creating-modifying-pdf/)
 
 * [Matplotlib](https://matplotlib.org/stable/gallery/lines_bars_and_markers/categorical_variables.html)
