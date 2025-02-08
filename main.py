@@ -1,8 +1,9 @@
 ####################################################################
-# ROSANA GARCIA
+# AUTHOR: ROSANA GARCIA
 # CSE 230
-# SRINT 2: 
-# ROSANA GARCIA
+# SRINT 2: DATA ANALYSIS 
+# Main program for analysing general cases os diseases registered
+# in diverse hospitals
 ####################################################################
 
 #   IMPORT PYTHON LIBRARIES
@@ -40,6 +41,8 @@ pdf_title = "Healthcare Data Analysis Report"
 
 #Selecting plotting data 
 plots = medical_center_assistence(testing_data, DISEASES, starting_date)
+
+# How much cases of each disease the area have had since 2023?
 show_plot(plots, "Diseases quantity report from {} to {}".format(starting_date.strftime("%d/%m/%Y"), current_date))
 
 #How many cases of Female and male patients with Diabetes we have had since 2023? 
